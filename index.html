@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <meta property="og:title" content="Wedding Invitation">
+    <meta property="og:description" content="Andzar & Feni's Wedding Invitation">
+    <meta property="og:image" content="acara.jpg"> <!-- Specify the URL of your preview image -->
+    <meta property="og:image:width" content="50"> <!-- Width of the image in pixels -->
+    <meta property="og:image:height" content="50"> <!-- Height of the image in pixels -->
+    <link rel="icon" href="logo2.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=La+Belle+Aurore&family=Marck+Script&family=Noto+Naskh+Arabic:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Updock&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=La+Belle+Aurore&family=Marck+Script&family=Noto+Naskh+Arabic:wght@400..700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Updock&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="invitationCover" class="invitation-cover">
+        <div class="cover-content">
+            <p>THE WEDDING OF</p>
+            <p class="couple" id="coupleNames"></p>
+            <p>Dear</p>
+            <p class="guest"><span id="guestName"></span></p>
+            <button id="openButton"><i class="fas fa-book-open"></i> BUKA UNDANGAN</button>
+        </div>
+    </div>
+
+    <div id="invitationContent" class="invitation-content">
+        <nav>
+            <ul>
+                <li><a href="#section1"><i class="fas fa-home"></i></a></li>
+                <li><a href="#section4"><i class="fas fa-user"></i></a></li>
+                <li><a href="#section5"><i class="fas fa-calendar"></i></a></li>
+                <li><a href="#section7"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="#section8"><i class="fas fa-gift"></i></a></li>
+            </ul>
+        </nav>
+
+
+        <div class="section fade-in" id="section1">
+            <div class="section1-content">
+                <img src="couple.png" alt="couple image">
+                <p>THE WEDDING OF</p>
+                <h1>Andzar & Feni</h1>
+                <p>10.02.2025</p>
+                <button id="goToSection3">Save the Date</button>
+            </div>
+        </div>
+
+
+        <div class="section" id="section2">
+            <div class="section2-content">
+                <!-- Vintage Frame -->
+                <div class="frame-container fade-slide">
+                    <img src="vintage.png" alt="Vintage Frame">
+                    <div class="text">A F</div>
+                </div>
+        
+                <!-- Quran Verse -->
+                <div class="quran-verse">
+                    <p class="translation fade-slide">Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</p>
+                    <p class="surah fade-slide">Surah Ar-Rum, 30:21</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section4">
+            <div class="section4-content">
+                <h3 class="fade-slide">KEDUA MEMPELAI</h3>
+                <div class="profile-container">
+                    <div class="profile">
+                        <img src="husband.png" alt="Husband Profile" class="fade-slide">
+                        <div class="profile-info fade-slide">
+                            <h3>Ahmad Munandzar Fahman Rifai</h3>
+                            <p>Putra dari Bapak Rifai & Ibu Anis Indah Wati</p>
+                            <a href="https://www.instagram.com/munandzar.fahman/profilecard/?igsh=cWcwczh3N3FscmVh" target="_blank" class="instagram-button"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <img src="wife.png" alt="Wife Profile" class="fade-slide">
+                        <div class="profile-info fade-slide">
+                            <h3>Siti Alfaini Faqihi</h3>
+                            <p>Putri dari Bapak Dahmuruddin & Ibu Fuziati</p>
+                            <a href="https://www.instagram.com/feniqueen_/profilecard/?igsh=MzRia2Y5bG9qczc5" target="_blank" class="instagram-button"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <div class="section3-content">
+                <p class="fade-slide">MENUJU HARI BAHAGIA</p>
+                <div id="countdown">
+                    <div class="unit fade-slide">
+                        <span class="number" id="days"></span>
+                        <span class="label">Hari</span>
+                    </div>
+                    <div class="unit fade-slide">
+                        <span class="number" id="hours"></span>
+                        <span class="label">Jam</span>
+                    </div>
+                    <div class="unit fade-slide">
+                        <span class="number" id="minutes"></span>
+                        <span class="label">Menit</span>
+                    </div>
+                    <div class="unit fade-slide">
+                        <span class="number" id="seconds"></span>
+                        <span class="label">Detik</span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="section" id="section5">
+            <div class="wedding-detail">
+                <img src="merak.png" alt="merak" class="fade-slide merak">
+                <h2 class="fade-slide">With Love</h2>
+                <p class="fade-slide">Dengan segala kerendahan hati dan dengan ucapan syukur atas karunia Tuhan, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir di acara pernikahan kami yang akan dilaksanakan pada:</p>
+                <div class="akad-nikah fade-slide">
+                    <div class="event-layer">
+                        <img src="event_decoration.png" alt="event decoration" class="event-decor">
+                        <h3>Akad Nikah</h3>
+                        <img src="line.png" alt="line" class="event-line">
+                        <p><i class="fas fa-calendar-alt"></i> Senin, 10 Februari 2025</p>
+                        <p><i class="fas fa-clock"></i> 10:00 WITA</p>
+                        <img src="line_map.png" alt="line_map" class="event-line">
+                        <p><i class="fas fa-map-marker-alt"></i> KUA Gunungsari</p>
+                        <p><i class="fas fa-map-pin"></i> Gunungsari, Lombok Barat</p>
+                        <a href="https://maps.app.goo.gl/tE8W6aLjyTEFnykK9" target="_blank" class="location-button">
+                            <i class="fas fa-map-marker-alt"></i> Lokasi Acara
+                        </a>
+                    </div>
+                </div>                
+                <div class="resepsi fade-slide">
+                    <div class="event-layer">
+                        <img src="event_decoration.png" alt="event decoration" class="event-decor">
+                        <h3>Ramah Tamah</h3>
+                        <img src="line.png" alt="line" class="event-line">
+                        <p><i class="fas fa-calendar-alt"></i> Senin, 10 Februari 2025</p>
+                        <p><i class="fas fa-clock"></i> 11:00 WITA</p>
+                        <img src="line_map.png" alt="line_map" class="event-line">
+                        <p><i class="fas fa-map-marker-alt"></i> Perumahan BTN Bukit Hijau</p>
+                        <p><i class="fas fa-map-pin"></i> Kekait Wadon, Gunungsari</p>
+                        <a href="https://maps.app.goo.gl/TWWMch4cNCvHzZgX6" target="_blank" class="location-button">
+                            <i class="fas fa-map-marker-alt"></i> Lokasi Acara
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section8">
+            <div class="gift-details">
+                    <h2 class="fade-slide">Wedding Gift</h2>
+                    <p class="fade-slide">Jika ingin memberikan hadiah pernikahan, Anda dapat melakukannya melalui nomor rekening berikut:</p>
+                <div class="bank-container">
+                    <div class="bank-item">
+                        <img src="bni.png" alt="Logo Bank" class="bank-logo1 fade-slide">
+                        <img src="chip.png" alt="chip" class="fade-slide chip">
+                        <p class="fade-slide account-name">Siti Alfaini Faqihi</p>
+                        <p class="bank-number fade-slide">1350852233</p>
+                        <button id="copyButton" class="copyButton fade-slide"><i class="fas fa-copy"></i> Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="section" id="section7">
+                <div class="section7-content">
+                    <h2 class="fade-slide">Wishes</h2>
+                    <p class="fade-slide">Berikan ucapan harapan dan do'a kepada kedua mempelai</p>
+                    <form id="messageForm" action="https://andzar-feni2.glitch.me/messages" method="POST" class="fade-slide">
+                        <input type="text" id="formGuestName" name="name" placeholder="Nama" required>
+                        <textarea id="guestMessage" name="message" rows="4" placeholder="Doa & Ucapan" required></textarea>
+                        <button type="submit">KIRIM</button>
+                    </form>
+                    <div id="messageList" class="fade-slide"></div>
+                </div>
+            </div>
+
+        <div class="thank-you">
+            <div class="thank-you-content">
+                <!-- Vintage Frame -->
+                <div class="frame-container fade-slide">
+                    <img src="vintage.png" alt="Vintage Frame">
+                    <div class="text">I F</div>
+                </div>
+                <img src="couple.png" alt="we are happy" class="fade-slide thank-you-image">
+                <p class="fade-slide">Merupakan suatu kehormatan & kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i hadir untuk memberikan doa restunya untuk keberkahan pernikahan kami.</p>
+                <h2 class="fade-slide couple-name">Andzar & Feni</h2>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="logo fade-slide">
+                    <img src="nc logo.png" alt="Logo" />
+                </div>
+                <div class="social-media-ncp fade-slide">
+                    <a href="https://www.facebook.com/profile.php?id=61560664461271&mibextid=LQQJ4d" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/nicwaproject?igsh=enk4YWxoa24zNzY5&utm_source=qr" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/+6285974176110" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://nicwaproject.github.io/NicwaProject-Store/" target="_blank" class="social-icon"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </footer>
+        
+    <div id="audioControl">
+        <img id="playPauseButton" src="play-button.png" alt="Play" class="play-btn">
+    </div>
+</div>
+
+<audio id="backgroundMusic" src="Di Sepertiga Malam.mp3"></audio> <!-- Change this to the path of your music file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

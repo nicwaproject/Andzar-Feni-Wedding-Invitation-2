@@ -1,0 +1,1073 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #7B5446;
+    --background-color: rgba(123, 84, 70, 0.7);
+    --background-black: rgba(0, 0, 0, 0.5);
+    --background-white: rgba(255, 255, 255, 0.3);
+    --primari-font: "Updock", cursive;
+}
+
+/* ........................COVER.................. */
+
+.invitation-cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-image: url('background2.jpg'); /* Desktop background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+    overflow-y: hidden;
+}
+
+.cover-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    max-width: 300px;
+    min-height: 600px;
+    line-height: 0.8;
+    color: white;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.couple {
+    font-size: 4em;
+    font-weight: bold;
+    font-family: var(--primari-font);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.guest {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.invite-text {
+    font-size: 1em;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+#openButton {
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#openButton:hover {
+    background-color: #D1DCD8;
+    color: black;
+}
+
+/* NAVIGASI */
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: 999;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Jarak antar ikon */
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px; /* Ukuran ikon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f2f2f2; /* Warna teks saat hover */
+}
+
+
+/* ................................SECTION........................ */
+#invitationContent {
+    display: none; /* Menyembunyikan konten */
+}
+
+#audioControl {
+    display: none; /* Menyembunyikan kontrol audio */
+}
+
+
+.section {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+.section h2 {
+    font-family: "Updock", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.8em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: black;
+    text-decoration: underline;
+}
+/* .......SECTION 1........... */
+
+#section1 {
+    background-image: url('background2.jpg'); /* Desktop background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px 10px;
+}
+
+.section1-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    color: white;
+    background-color: var(--background-color);
+    border-radius: 200px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    max-width: 340px;
+    min-height: 650px;
+}
+
+.section1-content img {
+    height: 330px;
+    border-radius: 200px 200px 0 0;
+}
+
+.section1-content h1 {
+    font-family: var(--primari-font);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.section1-content button {
+    background-color: var(--primary-color);
+    border-radius: 50px;
+}
+
+.section1-content button:hover {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+#goToSection3 {
+    padding: 10px 20px;
+    background-color: var(--background-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* ..........SECTION 2......... */
+#section2 {
+    background-image: url('background.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.section2-content {
+    background-color: var(--background-color);
+    padding: 0 30px;
+}
+
+.quran-verse {
+    max-width: 700px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.verse {
+    font-size: 24px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.translation {
+    font-size: 18px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.surah {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.frame-container {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: 20px auto;
+}
+
+.frame-container img {
+    width: 100%;
+    height: auto;
+}
+
+.frame-container .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    color: white;
+    font-family: var(--primari-font);
+    font-weight: bold;
+}
+
+/*.............. SECTION 3.............. */
+#section3 {
+    background-image: url('background3.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 0;
+}
+
+.section3-content{
+    background-color: var(--background-color);
+    padding: 40px 0;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.unit {
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    padding: 10px; 
+}
+
+.unit span {
+    display: block;
+    font-size: 24px;
+}
+
+.number {
+    font-size: 36px;
+    font-weight: bold;
+    color: white; /* Number color */
+}
+
+.label {
+    font-size: 18px;
+    color: white; /* Label color */
+}
+
+/* .............section 4 profile........... */
+#section4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    background-image: url('background2.jpg'); /* Mobile background image */
+    background-size: cover;
+    background-position: center;
+    color:white;
+    position: relative;
+    text-align: center;
+}
+
+.section4-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    max-width: 300px;
+    border-radius: 200px;
+    padding: 50px 10px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.profile {
+    margin: 40px;
+    text-align: center;
+    min-width: 350px;
+}
+
+.profile img {
+    width: 200px; /* Adjust image width as needed */
+    height: 400px; /* Adjust image height as needed */
+    border-radius: 100px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+    object-fit: cover; 
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-info h3 {
+    margin-bottom: 5px;
+    font-size:1.4em;
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+}
+
+.instagram-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 7px;
+    height: 20px;
+}
+
+.instagram-button:hover {
+    background-color: #D1DCD8;
+    color: black;
+}
+
+/* .............SECTION 5 WEDDING DETAIL............. */
+#section5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 40px 10px;
+    background-image: url('background.jpg');
+    color:white;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.merak {
+    width: 280px;
+    padding: 0;
+    margin: 0;
+}
+
+#section5 h2 {
+    color: white;
+    text-decoration: underline;
+}
+
+.wedding-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--background-color); 
+    padding: 100px 20px;
+    max-width: 300px;
+    border-radius: 200px;
+    height: auto;
+}
+
+.akad-nikah {
+    background-image: url('acara.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    margin-top: 20px;
+    padding: 4px;
+    text-align: center;
+    min-width: 250px;
+    border-radius: 50px;
+}
+
+.resepsi {
+    background-image: url('acara.jpg');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    margin-top: 20px;
+    padding: 4px;
+    text-align: center;
+    min-width: 250px;
+    border-radius: 50px;
+}
+
+.akad-nikah h3, .resepsi h3 {
+    font-size: 30px;
+    padding: 0;
+    margin: 10px;
+}
+
+.event-layer {
+    background-color: var(--background-black);
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.event-decor {
+    width: 150px;
+}
+
+.event-line {
+    width: 170px;
+    padding: 0;
+}
+
+.event h3 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.event p {
+    margin-bottom: 20px;
+}
+
+.location-button {
+    margin-top: 50px;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.location-button:hover {
+    background-color: #D1DCD8;
+    color: black;
+    border-color: var(--primary-color);
+}
+
+
+/* .............SECTION 7 MESSAGE........ */
+
+/* General section styling */
+#section7 {
+    background-image: url('background.jpg');
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#section7 h2 {
+    color: white;
+}
+
+.section7-content {
+    background-color: var(--background-color);
+    padding: 30px 0;
+}
+
+/* Form styling */
+#messageForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#messageForm input,
+#messageForm textarea {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#messageForm button {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    font-size: 12px;
+    background-color:var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#messageForm button:hover {
+    background-color: #D1DCD8;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Message list styling */
+#messageList {
+    margin-top: 20px;
+    max-height: 400px; /* Atur tinggi maksimal, misalnya 200px */
+    overflow-y: auto; /* Tambahkan scroll vertikal */
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 10px; /* Tambahkan padding */
+}
+
+.message {
+    color: black;
+    border: 1px solid white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message .message-content {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.message .message-author {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-decoration: underline;
+}
+
+.message .message-body {
+    margin-top: 10px;
+}
+
+
+/* CSS untuk mengganti font placeholder */
+#formGuestName::placeholder,
+#guestMessage::placeholder {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px; /* Ganti dengan ukuran font yang diinginkan */
+    color: #888; /* Ganti dengan warna yang diinginkan */
+}
+/* CSS untuk mengganti font input */
+#formGuestName,
+#guestMessage {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px; /* Ganti dengan ukuran font yang diinginkan */
+    color: #333; /* Ganti dengan warna yang diinginkan */
+}
+
+
+/* ...........SECTION 8............. */
+#section8 {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('background2.jpg'); /* Mobile background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white; /* Text color */
+    height: auto; /* Set height to 100% of viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    gap: 50px;
+    padding: 30px;
+    overflow-y: hidden;
+}
+
+.bank-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+}
+
+.gift-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 20px;
+    max-width: 350px;
+    border-radius: 30px;
+}
+
+.gift-details h2 {
+    color: white;
+}
+
+
+.bank-item {
+    background-image: url('card.jpeg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 4px #d0d0d0, -2px -2px 4px #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    min-width: 300px;
+    min-height: 180px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.bank-logo1 {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.bank-logo2 {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.chip {
+    width: 30px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.account-name {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+
+.bank-number {
+    color: black;
+    font-size: 12px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+}
+
+.copyButton {
+    padding: 8px 18px;
+    background-color: var(--background-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.copyButton:hover {
+    background-color: #D1DCD8;
+    color: black;
+}
+
+/* THANK-YOU SECTION */
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 100px 20px;
+    line-height: 1;
+}
+
+.thank-you h2 {
+    font-family: "Updock", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.2em;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.thank-you p {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+
+#section8 h2 {
+    font-family: "Updock", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size:3.2em;
+}
+
+#section8 p {
+    font-family: "Old Standard TT", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+}
+
+.thank-you-image {
+    width:330px;
+    border-radius: 20px;
+}
+
+.thank-you-content {
+    background-color: var(--background-color);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+}
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    padding-bottom: 50px;
+    padding-top: 15px;
+}
+  
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+.logo img {
+    height: 40px;
+}
+  
+.social-media-ncp {
+    display: flex;
+}
+  
+  .social-icon {
+    color: var(--primary-color); /* Warna ikon */
+    font-size: 24px; /* Ukuran ikon */
+    margin-left: 15px; /* Jarak antar ikon */
+    text-decoration: none; /* Menghilangkan garis bawah */
+  }
+  
+  .social-icon:hover {
+    color: #f3f3f3; /* Warna saat hover */
+  }
+
+
+/* ...............  ANIMATION............... */
+.fade-in {
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+.fade-slide {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.fade-slide.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* .....................AUDIO CONTROL.................... */
+#audioControl {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999; /* Ensure it's above other content */
+    text-align: center;
+    display: none; /* Initially hide the button */
+}
+
+.play-btn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* SEPERATOR  */
+
+.separator {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 20px 0;
+}
+
+.separator::before, 
+.separator::after {
+    content: '';
+    height: 1px; /* Membuat garis horizontal */
+    flex-grow: 1;
+    width: 100px;
+    background-color: black;
+}
+
+/* ..............Style for the modal............. */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ......................MEDIA QUERY..................... */
+@media (max-width: 600px) {
+    /* ...........COVER.................*/
+    .invitation-cover {
+        overflow-y: hidden;
+        background-image: url('background.jpg');
+    }
+    .couple {
+        font-size: 3.5em;
+    }
+    .guest {
+        font-size: 1.5em;
+    }
+
+    /* SECTION1 */
+    #section1 {
+        background-image: url('background.jpg'); /* Mobile background image */
+        height: 100vh;
+    }
+    .couple-name {
+        font-size: 5em;
+        margin: 5px 5px 5px 5px;
+        padding: 10px;
+    }
+    /* SECTION 2 */
+    #section2 .quran-verse {
+        max-width: 350px;
+    }
+    .verse {
+        font-size: 20px;
+        line-height: 1.8;
+    }
+    .translation {
+        font-size: 13px;
+    }
+    /* SECTION3 */
+    .unit {
+        margin: 5px;
+        max-width: 80px;
+    }
+
+    .unit span {
+        font-size: 20px;
+    }
+    
+    .number {
+        font-size: 18px;
+    }
+    
+    .label {
+        font-size: 12px;
+    }
+
+    /* SECTION 4 */
+    #section4 {
+        background-image: url('background.jpg');
+    }
+
+    .profile-container {
+        flex-direction: column;
+    }
+    /* SECTION 5 */
+    .wedding-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+    .event {
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 80%; /* Adjust width as needed */
+    }
+    /* SECTION 6 */
+    #section6 {
+        background-image: url('background.jpeg');
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    /* SECTION8 */
+    #section8 {
+        background-image: url('background.jpg');
+    }
+    .thank-you {
+        line-height: 1;
+    }
+
+    .bank-container {
+        flex-direction: column;
+    }
+
+    /* SECTION 9 */
+    #section9 {
+        background-image: url('background.jpeg');
+    }
+}
